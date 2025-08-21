@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     --primary-color: #8b4513;
     --hover-color: #5c2e0f;
@@ -7,12 +11,6 @@
     --light-color: #ffefdf;
     --font-body: 'Poppins', sans-serif;
     --font-logo: 'Pacifico', cursive;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 @font-face {
@@ -48,39 +46,8 @@ a{
     color: inherit;
 }
 
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#header{
-    padding: 1rem 0;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo{
     font-family: var(--font-logo);
-    font-size: 1.2rem;
-    color: var(--primary-color);
-}
-
-.menu-desktop{
-    display: none;
-}
-
-#menu-mobile button{
-    background: #fff;
-    border: 0;
-    font-weight: 700;
-    font-size: 2rem;
 }
 
 .hero-overlay{
@@ -118,158 +85,7 @@ a{
     transition: 0.5s;
 }
 
-#products{
-    padding: 5rem 0;
-}
-
-#products h2{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
-.descricao{
-    text-align: center;
-    margin: 0 auto 3rem;
-    max-width: 600px;
-    color: var(--text-muted);
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.card{
-    background-color: var(--light-color);
-    border-radius: 0.8rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-}
-
-.card-body{
-    padding: 1.5rem;
-}
-
-.card-body h3{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.card-body p{
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-}
-
-.card-body .price{
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-#contact{
-    background-color: var(--light-color);
-    padding: 4rem 0;
-}
-
-.contact-box{
-    background: #fff;
-    border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-text{
-    padding: 2rem;
-}
-
-.contact-text h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hours p{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-
-.address{
-    margin: 2rem 0;
-}
-
-.address p{
-    color: var(--text-muted);
-}
-
-.contact-img img{
-    width: 100%;
-    height: auto;
-    background-size: contain;
-    background-position: center;
-}
-
-#footer{
-    background: var(--text-dark);
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.footer-inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-brand p{
-    font-size: 0.9rem;
-}
-
-.footer-brand h3{
-    color: #fff;
-    font-size: 1.5rem;
-}
-
-.social-icons{
-    display: flex;
-    justify-content: center;
-    display: flex;
-    gap: 1rem;
-}
-
-.social-icons img{
-    width: 26px;
-    height: 26px;
-    padding: 0.1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 50;
-}
-
-.footer-social p{
-    font-size: 0.9rem;
-}
-
 @media (min-width: 768px){
-
-    .menu-desktop{
-        display: flex;
-        justify-content: flex-end;
-        gap: 1rem;
-        list-style: none;
-    }
-
-    #menu-mobile{
-        display: none;
-    }
-
-    .menu-desktop li a:hover{
-        color: var(--primary-color);
-    }
 
     .grid{
         grid-template-columns: repeat(2, 1fr);
