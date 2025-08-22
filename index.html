@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Aurora</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
+<body class="font-body">
     <header class="shadow-gray-600">
         <div class="flex justify-between items-center py-6 px-10">
-            <div class="logo text-xl text-amber-900">
-                <h1 class="text-4xl">Café Aurora</h1>
+            <div class="font-logo text-xl text-amber-900">
+                <h1 class="text-4xl lg:text-5xl">Café Aurora</h1>
             </div>
             <nav class="menu" aria-label="Menu Principal">
                 <div class="inline md:hidden" aria-label="Menu Mobile">
-                    <button class="text-xl">&#9776;</button>
+                    <button class="text-3xl">&#9776;</button>
                 </div>
-                <!-- vvv -->
-                <ul class="hidden md:flex menu-desktop gap-4" aria-label="Menu Desktop">
+                <ul class="hidden md:flex lg:text-xl menu-desktop gap-4" aria-label="Menu Desktop">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Cardápio</a></li>
                     <li><a href="#">Contato</a></li>
@@ -28,21 +26,21 @@
     </header>
     <main>
         <section>
-            <div class="bg-[url('./images/aurora-capa.jpg')] bg-cover bg-center p-10">
-                <div class="mt-5 text-center justify-center text-gray-100">
-                    <h2 class="text-4xl mt-8">Sinta o sabor do verdadeiro café.</h2>
-                    <p class="mt-8 mb-3">
+            <div class="bg-hero-pattern bg-cover bg-center py-[10rem] md:py-20 lg:py-[30rem] px-5 flex justify-center">
+                <div class="relative text-center text-gray-100">
+                    <h2 class="text-4xl lg:text-6xl mt-8 font-semibold">Sinta o sabor do verdadeiro café.</h2>
+                    <p class="mt-8 mb-3 lg:text-xl">
                         Uma experiência única de sabores intensos e aromas envolventes, 
                         preparados com grãos selecionados e muito carinho.
                     </p>
-                    <a href="#products" class="py-4 px-5 rounded-2xl bg-amber-950 inline-block">Conheça Nosso Cardápio</a>
+                    <a href="#products" class="py-4 px-5 mt-5 rounded-lg bg-amber-950 inline-block hover:bg-red-950 hover:transition-all lg:text-2xl">Conheça Nosso Cardápio</a>
                 </div>
             </div>
         </section>
         <section id="products" class="py-20 px-0">
             <div class="mx-5">
-                <h2 class="text-center text-3xl mb-2">Nossos cafés Especiais</h2>
-                <p class="text-center mb-12 text-gray-500">
+                <h2 class="text-center text-3xl lg:text-4xl mb-2 font-semibold">Nossos cafés Especiais</h2>
+                <p class="text-center mb-12 text-gray-500 lg:text-xl">
                     Descubra nossa seleção de cafés premium, cuidadosamente 
                     preparados para oferecer uma experiência sensorial inesquecível.
                 </p>
@@ -95,18 +93,18 @@
         <section id="contact" class="bg-orange-50 py-16 px-0">
             <div class="w-11/12 max-w-6xl my-0 mx-auto bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row">
                 <div class="p-6 md:flex-1 md:box-border">
-                    <h2 class="text-2xl mb-4 font-bold">Horário de Funcionamento</h2>
+                    <h2 class="text-2xl lg:text-3xl mb-4 font-bold">Horário de Funcionamento</h2>
                     <div>
-                        <p class="flex justify-between mb-2"><span>Segunda a Sexta</span><span>07:30 - 20:00</span></p>
-                        <p class="flex justify-between mb-2"><span>Sábado</span><span>08:00 - 22:00</span></p>
-                        <p class="flex justify-between mb-2"><span>Domingo</span><span>09:00 - 18:00</span></p>
+                        <p class="flex justify-between mb-2 lg:text-lg"><span>Segunda a Sexta</span><span>07:30 - 20:00</span></p>
+                        <p class="flex justify-between mb-2 lg:text-lg"><span>Sábado</span><span>08:00 - 22:00</span></p>
+                        <p class="flex justify-between mb-2 lg:text-lg"><span>Domingo</span><span>09:00 - 18:00</span></p>
                     </div>
                     <div>
-                        <p class="text-gray-800"><strong>Endereço</strong></p>
-                        <p class="text-gray-800">Rua das Flores, 123, Centro.</p>
-                        <p class="text-gray-800">São Paulo, SP</p>
+                        <p class="text-gray-800 lg:text-xl"><strong>Endereço</strong></p>
+                        <p class="text-gray-800 lg:text-lg">Rua das Flores, 123, Centro.</p>
+                        <p class="text-gray-800 lg:text-lg">São Paulo, SP</p>
                     </div>
-                    <a href="#" class="bg-amber-900 text-white py-4 px-5 rounded-2xl font-semibold inline-block mt-5">Ver no Mapa</a>
+                    <a href="#" class="bg-amber-900 text-white py-4 px-5 rounded-lg font-semibold inline-block mt-5 hover:bg-red-950 hover:transition-all lg:text-xl">Ver no Mapa</a>
                 </div>
                 <div>
                     <img src="./images/aurora-horario.jpg" alt="Café sendo servido" class="w-full h-full bg-contain bg-center md:flex-1">
@@ -115,18 +113,18 @@
         </section>
     </main>
     <footer id="footer" class="bg-neutral-700 text-white py-6 px-0 text-center">
-        <div class="w-11/12 max-w-6xl my-0 mx-auto flex flex-col items-center gap-4">
+        <div class="w-11/12 max-w-6xl my-0 mx-auto flex flex-col md:flex-row md:justify-between items-center gap-4">
             <div>
-                <h3 class="logo text-white text-2xl">Café Aurora</h3>
-                <p class="text-white text-sm">O melhor café da cidade desde 2015.</p>
+                <h3 class="font-logo text-white text-2xl lg:text-3xl">Café Aurora</h3>
+                <p class="text-white text-sm lg:text-md">O melhor café da cidade desde 2015.</p>
             </div>
             <div>
-                <div class="flex justify-center g-4">
-                    <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Ir para o Instagram @cafe.aurora" class="w-8 h-8 p-1 mb-2 rounded-md"></a>
-                    <a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Ir para o Facebook cafe_aurora" class="w-8 h-8 p-1 mb-2 rounded-md"></a>
-                    <a href="https://www.whatsapp.com"><img src="./images/whatsapp.png" alt="Ir para o Whatsapp +55 (47) 99971-0923" class="w-8 h-8 p-1 mb-2 rounded-md"></a>
+                <div class="flex justify-center items-center g-4">
+                    <a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Ir para o Instagram @cafe.aurora" class="w-8 h-8 p-1 mb-2 rounded-md lg:w-10 lg:h-10"></a>
+                    <a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Ir para o Facebook cafe_aurora" class="w-8 h-8 p-1 mb-2 rounded-md lg:w-10 lg:h-10"></a>
+                    <a href="https://www.whatsapp.com"><img src="./images/whatsapp.png" alt="Ir para o Whatsapp +55 (47) 99971-0923" class="w-8 h-8 p-1 mb-2 rounded-md lg:w-10 lg:h-10"></a>
                 </div>
-                <p class="text-sm">&copy; 2025 Café Aurora. Todos os direitos reservados.</p>
+                <p class="text-sm lg:text-md">&copy; 2025 Café Aurora. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

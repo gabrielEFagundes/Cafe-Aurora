@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --primary-color: #8b4513;
-    --hover-color: #5c2e0f;
-    --text-dark: #333;
-    --text-muted: #555;
-    --background-color: #fff;
-    --light-color: #ffefdf;
-    --font-body: 'Poppins', sans-serif;
-    --font-logo: 'Pacifico', cursive;
-}
-
 @font-face {
     font-family: 'Pacifico';
     src: url('fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
@@ -20,106 +9,6 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-    font-size: 700;
-}
-
-@font-face {
-    font-family: 'Poppins';
     src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
     font-size: 400;
-}
-
-body{
-    font-family: var(--font-body);
-    background-color: var(--background-color);
-    color: var(--text-dark);
-}
-
-img{
-    max-width: 100%;
-    display: block;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo{
-    font-family: var(--font-logo);
-}
-
-.hero-overlay{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/aurora-capa.jpg') center/cover no-repeat;
-    padding: 4rem 0;
-}
-
-.hero-content{
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-}
-
-.hero-content h2{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p{
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-
-.btn{
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem 1.8rem;
-    border-radius: 1rem;
-    font-weight: 600;
-    display: inline-block;
-}
-
-.btn:hover{
-    background: var(--hover-color);
-    transition: 0.5s;
-}
-
-@media (min-width: 768px){
-
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-box{
-        flex-direction: row;
-    }
-
-    .contact-img{
-        flex: 1;
-    }
-
-    .contact-text{
-        flex: 1;
-    }
-
-    .footer-inner{
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    .col{
-        flex: 1;
-        box-sizing: border-box;
-    }
-
-}
-
-@media (min-width: 1024px){
-
-    .grid{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    
-}
+}   
